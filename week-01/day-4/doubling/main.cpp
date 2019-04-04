@@ -1,10 +1,14 @@
 #include <iostream>
-int baseNum = 123;
-void doubling() {
-    std::cout <<baseNum * 2 <<std::endl;
-}
+
+int doubling(int x);
 
 int main() {
-    doubling();
+    int a = 123;
+    int b = doubling(a);
+    std::cout << b <<std::endl;
     return 0;
+}
+int doubling(int x) {
+    int y = x * 2;
+    return y;
 }
