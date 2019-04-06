@@ -18,7 +18,7 @@ int main() {
 
     for (int i = 0; i < a; i++) {
 
-        for (int k = 0; k < i + 1; k++) {
+        for (int k = 0; k < i; k++) {
 
             std::cout << "*";
 

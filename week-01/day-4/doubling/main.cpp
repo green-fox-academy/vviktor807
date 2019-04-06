@@ -3,7 +3,9 @@
 int doubling(int x);
 
 int main() {
-    int a = 123;
+    int a;
+    std::cout << "Please enter a number:" <<std::endl;
+    std::cin >> a;
     int b = doubling(a);
     std::cout << b <<std::endl;
     return 0;
