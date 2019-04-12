@@ -11,7 +11,7 @@ int main() {
     for (int i = 0; i < 5; ++i) {
 
        numList[i] *= 2;
-       std::cout << numList[i] << std::endl;
+       std::cout << i << std::endl;
     }
     return 0;
 }

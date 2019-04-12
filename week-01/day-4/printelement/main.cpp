@@ -6,10 +6,8 @@
 int main() {
 
     int numbers[] = {4, 5, 6, 7};
-
-    std::cout << numbers[0] << std::endl;
-    std::cout << numbers[1] << std::endl;
-    std::cout << numbers[2] << std::endl;
-    std::cout << numbers[3] << std::endl;
+    for (int i = 0; i < 4; ++i) {
+        std::cout << numbers[i] << std::endl;
+    }
     return 0;
 }
