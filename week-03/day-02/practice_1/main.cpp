@@ -9,17 +9,20 @@ void divider(int);
 
 int main()
 {
-    int a = 0;
-    divider(a);
+    try {
+        int a = 0;
+        divider(a);
+    }catch (std::string& e) {
+        std::cout << e << std::endl;
+    }
     return 0;
 }
 
 void divider(int x)
 {
-    if (x == 0) {
-        std::cout << "Fail!" << std::endl;
-    } else {
 
-        std::cout << x / 10 << std::endl;
+    if (x == 0) {
+        throw std::string("Can't divide by 0");
     }
+    std::cout <<   10 / x;
 }
