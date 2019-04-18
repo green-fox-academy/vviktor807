@@ -20,6 +20,11 @@ void Counter::add()
     _number += 1;
 }
 
+void Counter::add(int other)
+{
+    _number += other;
+}
+
 int Counter::getNumber()
 {
     return _number;

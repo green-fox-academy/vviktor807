@@ -9,11 +9,13 @@
 
 class Counter {
 public:
-    Counter(int number);
+    Counter(int number = 0);
 
     void setNumber(int number);
 
     void add();
+
+    void add(int);
 
     void reset();
 
