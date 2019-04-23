@@ -15,6 +15,7 @@ enum Gender {
 class Person {
 public:
     Person(const std::string &name, int age, Gender gender);
+
     Person();
 
     virtual void introduce();

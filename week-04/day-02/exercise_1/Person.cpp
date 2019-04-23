@@ -10,6 +10,7 @@ Person::Person(const std::string &name, int age, Gender gender)
     _age = age;
     _gender = gender;
 }
+
 Person::Person()
 {
     _name = "Jane Doe";
