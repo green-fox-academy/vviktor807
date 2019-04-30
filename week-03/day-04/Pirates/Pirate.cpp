@@ -11,15 +11,21 @@ Pirate::Pirate()
 
 void Pirate::drinkSomeRum()
 {
-    _drunk++;
+    if (_hp <= 0) {
+        std::cout << "He can't. He is dead" << std::endl;
+    } else {
+        _drunk++;
+    }
 }
 
 void Pirate::howsItGoingMate()
 {
-    if (_drunk < 5) {
+    if (_drunk < 5 && !_dead) {
         std::cout << "Pour me anudder!" << std::endl;
-    } else {
+    } else if (_drunk >= 5 && !_dead) {
         std::cout << "Arghh, I'ma Pirate. How d'ya d'ink its goin? /Falls asleep./" << std::endl;
+    } else if (_dead) {
+        std::cout << "He is already dead." << std::endl;
     }
 }
 
@@ -41,3 +47,30 @@ bool Pirate::getPassedOut()
     }
     return _passedout;
 }
+
+void Pirate::die()
+{
+    _hp = 0;
+    _dead = true;
+}
+
+bool Pirate::deadOrNot()
+{
+    return _dead;
+}
+
+bool Pirate::getCaptain()
+{
+    return _captain;
+}
+
+void Pirate::setCaptain(bool captain)
+{
+    _captain = captain;
+}
+int Pirate::getHp()
+{
+    return _hp;
+}
+
+

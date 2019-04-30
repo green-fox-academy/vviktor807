@@ -12,6 +12,9 @@ class Pirate {
 private:
     int _drunk = 0;
     bool _passedout = false;
+    bool _dead = false;
+    int _hp = 100;
+    bool _captain = false;
 public:
     Pirate();
 
@@ -22,6 +25,16 @@ public:
     bool getPassedOut();
 
     void howsItGoingMate();
+
+    void die();
+
+    bool deadOrNot();
+
+    bool getCaptain();
+
+    void setCaptain(bool captain);
+
+    int getHp();
 };
 
 
