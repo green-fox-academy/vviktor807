@@ -10,9 +10,11 @@
 
 class Trees : public Plants {
 public:
-    Trees(const std::string &color);
+    Trees(std::string color);
 
     std::string getName();
+
+    Type getType() override;
 
 private:
     std::string _name;

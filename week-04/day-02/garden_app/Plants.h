@@ -7,6 +7,11 @@
 
 #include <iostream>
 
+enum Type {
+    FLOWER,
+    TREE
+};
+
 class Plants {
 public:
     Plants(std::string color);
@@ -19,6 +24,8 @@ public:
     void setWaterAmount(double);
 
     double getWaterAmount();
+
+    virtual Type getType() = 0;
 
 private:
     double _currentWaterAmount;

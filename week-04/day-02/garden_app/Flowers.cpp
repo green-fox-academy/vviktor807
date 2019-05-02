@@ -4,22 +4,17 @@
 
 #include "Flowers.h"
 
-Flowers::Flowers(const std::string &color) : Plants(color)
+Flowers::Flowers(std::string color) : Plants(color)
 {
     _name = "Flower";
-}
-
-std::string Plants::getColor()
-{
-    return _color;
-}
-
-double Plants::getWaterAmount()
-{
-    return _currentWaterAmount;
 }
 
 std::string Flowers::getName()
 {
     return _name;
+}
+
+Type Flowers::getType()
+{
+    return FLOWER;
 }

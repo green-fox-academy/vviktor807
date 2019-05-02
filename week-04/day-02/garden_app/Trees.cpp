@@ -4,21 +4,17 @@
 
 #include "Trees.h"
 
-Trees::Trees(const std::string &color) : Plants(color)
+Trees::Trees(std::string color) : Plants(color)
 {
     _name = "Tree";
-}
-std::string Plants::getColor()
-{
-    return _color;
-}
-
-double Plants::getWaterAmount()
-{
-    return _currentWaterAmount;
 }
 
 std::string Trees::getName()
 {
     return _name;
+}
+
+Type Trees::getType()
+{
+    return TREE;
 }
