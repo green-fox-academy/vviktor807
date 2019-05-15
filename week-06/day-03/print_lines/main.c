@@ -7,7 +7,7 @@
 
 int main()
 {
-    print_lines("../my-file.txt");
+    print_lines("../my-fie.txt");
 
     return 0;
 }
